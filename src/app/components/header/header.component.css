@@ -1,0 +1,16 @@
+.header {
+  background: purple;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 700;
+}

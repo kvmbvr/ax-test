@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="list">
+    <div class="card" *ngFor="let pokemon of data" >
+      <div>
+        <p class="card__id">ID: {{pokemon.id}}</p>
+        <div class="card__image">
+          <img [src]="pokemon.sprites.other.dream_world.front_default" [alt]="pokemon.name">
+        </div>
+        <h3 class="card__name">{{ pokemon.name.toUpperCase() }}</h3>
+        <div class="card__info">
+          <div>
+            <p class="bold">{{ pokemon.height }}</p>
+            <p>Height</p>
+          </div>
+  
+          <div>
+            <p class="bold">{{ pokemon.base_experience }}</p>
+            <p>Experience</p>
+          </div>
+  
+          <div>
+            <p class="bold">{{ pokemon.order }}</p>
+            <p>Order</p>
+          </div>
+        </div>
+      </div>
+  
+      <button class="card__btn" (click)="goToPokemonDetail(pokemon.id)">Show more</button>
+    </div>
+  </div>
+  
+  <button class="more" (click)="loadMore()">Show more</button>
+  
+</div>

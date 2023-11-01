@@ -1,0 +1,16 @@
+<!-- pokemon-detail.component.html -->
+<div class="card">
+  <img class="card__img" [src]="pokemon.sprites?.other?.dream_world.front_default" [alt]="pokemon.name">
+  <div class="card__info">
+    <p>ID: {{ pokemon.id }}</p>
+    <p>Name: {{ pokemon.name }}</p>
+    <p>Height: {{ pokemon.height }}</p>
+    <p>Weight: {{ pokemon.weight }}</p>
+    <p>Some stats:</p>
+    <div class="card__stats">
+      <ng-container *ngFor="let stat of formatStats(pokemon.stats)">
+        <p class="card__stat">{{ stat }}</p>
+      </ng-container>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+.card {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 15px 15px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.card__img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.card__info {
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card__stat {
+  padding: 5px 15px;
+  border-radius: 15px;
+  background: #74c956;
+  color: white;
+  font-size: 16px;
+}
